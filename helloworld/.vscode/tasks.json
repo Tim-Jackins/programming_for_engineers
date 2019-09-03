@@ -17,7 +17,9 @@
                 "-g",
                 "-o",
                 "/home/jack/programmingForEngineers/helloworld.out",
-                "helloworld.cpp"
+                "helloworld.cpp",
+                "&&",
+                "./helloworld.out"
             ],
             "group": {
                 "kind": "build",
