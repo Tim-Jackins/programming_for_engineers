@@ -10,16 +10,16 @@
     },
     "tasks": [
         {
-            "label": "build hello world on WSL",
+            "label": "build and run hangman on WSL",
             "type": "shell",
             "command": "g++",
             "args": [
                 "-g",
                 "-o",
-                "/home/jack/programmingForEngineers/helloworld/helloworld.out",
-                "helloworld.cpp",
+                "/home/jack/programmingForEngineers/hangman/hangman.out",
+                "hangman.cpp",
                 "&&",
-                "./helloworld.out"
+                "./hangman.out"
             ],
             "group": {
                 "kind": "build",
