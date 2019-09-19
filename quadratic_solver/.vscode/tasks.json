@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "windows": {
+        "options": {
+            "shell": {
+                "executable": "bash.exe",
+                "args": ["-c"]
+            }
+        }
+    },
+    "tasks": [
+        {
+            "label": "build and run quadratic_solver on WSL",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-o",
+                "/home/jack/programmingForEngineers/quadratic_solver/quadratic_solver.out",
+                "quadratic_solver.cpp",
+                "&&",
+                "./quadratic_solver.out"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
