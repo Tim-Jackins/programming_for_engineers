@@ -5,9 +5,10 @@
 #include <stdint.h>
 #include <bits/stdc++.h>
 
+#define ITERATION_LIMIT 10000
+
 using namespace std;
 
-//The following functions will be useful.
 
 double quad(double a, double b, double c, double x)
 {
@@ -47,14 +48,19 @@ double vert(double a, double b, double c)
 
 double newtonRhapson(double a, double b, double c, double x, double err, double tol)
 {
-  while (abs(err) >= tol)
+  int count = 0;
+  while ((abs(err) >= tol) and (count < ITERATION_LIMIT))
   {
     err = quad(a, b, c, x) / slope(a, b, c, x);
 
     // Newton Rhapson:
     // x(i+1) = x(i) - f(x) / f'(x)
     x = x - err;
+
+    count++;
   }
+  cout << count;
+  if (count > 10000) cout << "Oops, I hit the iteration limit";
   return x;
 }
 
