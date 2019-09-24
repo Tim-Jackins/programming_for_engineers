@@ -1,7 +1,5 @@
 # Programming for Engineers
 
-> Lol
-
 ## Setup
 
 Set up WSL (I used Ubuntu 18) install some packages:
