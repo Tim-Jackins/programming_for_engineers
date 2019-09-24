@@ -16,7 +16,7 @@
             "args": [
                 "-g",
                 "-o",
-                "/home/jack/programmingForEngineers/trip_calc/trip_calc.out",
+                "/home/jack/programming_for_engineers/trip_calc/trip_calc.out",
                 "trip_calc.cpp",
                 "&&",
                 "./trip_calc.out"

@@ -5,68 +5,265 @@
 #include <stdint.h>
 #include <bits/stdc++.h>
 
+// In usd
+#define GAS_COST 0.27
+#define MAX_BREAKFAST_COST 9.0
+#define MAX_LUNCH_COST 12.0
+#define MAX_DINNER_COST 16.0
+#define MAX_PARKING_FEE 6.0
+#define MAX_TAXI_FEE 10.0
+#define MAX_HOTEL_COST 90.0
+
 using namespace std;
+
+double round(double &var)
+{
+    double value = (int)(var * 100 + .5);
+    return (double)value / 100;
+}
+
+double arraySum(vector<double> &v)
+{
+    double initial_sum = 0;
+    return accumulate(v.begin(), v.end(), initial_sum);
+}
 
 int main()
 {
-    double test = 2.0;
-    cout << test;
-    cin >> test;
-    cout << endl << test;
+    //system("clear");
+
+    double maximumExpense = 0.0;
 
     int daysSpent;
-    int dayCount = 1;
     cout << "How many days will you be on the trip? ";
     cin >> daysSpent;
 
-    leaveTimeRaw
+    int leaveTimeRaw;
+    char leaveModifier;
+    int leaveTime;
+    cout << "What time will you leave (to the nearest hour)? ";
+    cin >> leaveTimeRaw;
+    cout << "AM (a) or PM (p)? ";
+    cin >> leaveModifier;
+
+    leaveTime = (leaveModifier == 'a') ? leaveTimeRaw : (leaveTimeRaw + 12);
+
+    int homeTimeRaw;
+    char homeModifier;
+    int homeTime;
+    cout << "What time will you arrive home (to the nearest hour)? ";
+    cin >> homeTimeRaw;
+    cout << "AM (a) or PM (p)? ";
+    cin >> homeModifier;
+
+    homeTime = (homeModifier == 'a') ? homeTimeRaw : (homeTimeRaw + 12);
+
+    // Airfare cost start
+    double airfareCost;
+    cout << "What is the cost of airfare? ";
+    cin >> airfareCost;
+    maximumExpense += airfareCost;
+    // Airfare cost end
+
+    // Hotel cost start
+    double hotelCost;
+    cout << "What is the total cost for hotels (per night)? ";
+    cin >> hotelCost;
+    hotelCost *= (daysSpent - 1);
+    maximumExpense += MAX_HOTEL_COST * (daysSpent - 1);
+    // Hotel cost end
+
+    // Car cost start
+    double carCost;
+    char carModifier;
+    cout << "Did you drive your own car (y/n)? ";
+    cin >> carModifier;
+
+    if (carModifier == 'y')
+    {
+        cout << "How many miles did you drive? ";
+        double milesDriven;
+        cin >> milesDriven;
+
+        carCost = 0.27 * (double)milesDriven;
+    }
+    else
+    {
+        cout << "What is the cost of car rentals? ";
+        cin >> carCost;
+    }
+    maximumExpense += carCost;
+    // Car cost end
+
+    // Parking, taxi, and food cost start
+    int dayCount = 0;
+
+    // There's no real point to me using a vector instead of an array...
+    // I'm pretty sure it made a simpler to make the sum function.
+    vector<double> parkingFeeArray(daysSpent);
+    vector<double> taxiFeeArray(daysSpent);
+
+    double tempHolder;
+    double foodCost = 0.0;
+
+    cout << "For day " << (dayCount + 1) << ", what were your parking fees? ";
+    cin >> parkingFeeArray[dayCount];
+    if (parkingFeeArray[dayCount] > 0)
+        maximumExpense += MAX_PARKING_FEE;
+    cout << "For day " << (dayCount + 1) << ", what were your taxi fees? ";
+    cin >> taxiFeeArray[dayCount];
+
+    if (leaveTime < 7)
+    {
+        cout << "How much was breakfast? ";
+        cin >> tempHolder;
+        foodCost += tempHolder;
+        maximumExpense += MAX_BREAKFAST_COST;
+    }
+    if (leaveTime < 12)
+    {
+        cout << "How much was lunch? ";
+        cin >> tempHolder;
+        foodCost += tempHolder;
+        maximumExpense += MAX_LUNCH_COST;
+    }
+    if (leaveTime < 18)
+    {
+        cout << "How much was dinner? ";
+        cin >> tempHolder;
+        foodCost += tempHolder;
+        maximumExpense += MAX_DINNER_COST;
+    }
+
+    for (dayCount = 1; dayCount < (daysSpent - 1); dayCount++)
+    {
+        cout << "For day " << (dayCount + 1) << ", what were your parking fees? ";
+        cin >> parkingFeeArray[dayCount];
+        maximumExpense += MAX_PARKING_FEE;
+        cout << "For day " << (dayCount + 1) << ", what were your taxi fees? ";
+        cin >> taxiFeeArray[dayCount];
+
+        cout << "How much was breakfast? ";
+        cin >> tempHolder;
+        foodCost += tempHolder;
+        maximumExpense += MAX_BREAKFAST_COST;
+
+        cout << "How much was lunch? ";
+        cin >> tempHolder;
+        foodCost += tempHolder;
+        maximumExpense += MAX_LUNCH_COST;
+
+        cout << "How much was dinner? ";
+        cin >> tempHolder;
+        foodCost += tempHolder;
+        maximumExpense += MAX_DINNER_COST;
+    }
+
+    cout << "For day " << daysSpent << ", what were your parking fees? ";
+    cin >> parkingFeeArray[dayCount];
+    if (parkingFeeArray[dayCount] > 0)
+        maximumExpense += MAX_PARKING_FEE;
+    cout << "For day " << daysSpent << ", what were your taxi fees? ";
+    cin >> taxiFeeArray[dayCount];
+
+    if (homeTime > 8)
+    {
+        cout << "How much was breakfast? ";
+        cin >> tempHolder;
+        foodCost += tempHolder;
+        maximumExpense += MAX_BREAKFAST_COST;
+    }
+    if (homeTime > 13)
+    {
+        cout << "How much was lunch? ";
+        cin >> tempHolder;
+        foodCost += tempHolder;
+        maximumExpense += MAX_LUNCH_COST;
+    }
+    if (homeTime > 19)
+    {
+        cout << "How much was dinner? ";
+        cin >> tempHolder;
+        foodCost += tempHolder;
+        maximumExpense += MAX_DINNER_COST;
+    }
+    // Parking, taxi, and food cost end
     
-    "What time will you leave (to the nearest hour)? "
-    "AM (a) or PM (p)? "
-    "What time will you arrive home (to the nearest hour)? "
-    "AM (a) or PM (p)? "
+    if (arraySum(taxiFeeArray) > 0)
+        maximumExpense += MAX_TAXI_FEE * daysSpent;
 
-    return 0;
+    double totalExpenses = airfareCost + hotelCost + carCost + foodCost + arraySum(parkingFeeArray) + arraySum(taxiFeeArray);
+
+    cout << "\nTotal expenses incurred by traveller: " << totalExpenses << endl
+         << "Maximum allowable expenses: " << maximumExpense << endl;
+
+    double expenseDelta = maximumExpense - totalExpenses;
+    if (expenseDelta > 0)
+        cout << "You saved the company $" << expenseDelta << ".";
+    else
+        cout << "You must reimburse the company for the $" << abs(expenseDelta) << " coverages.";
+
+        return 0;
 }
+
 /*
-The total number of days spent on the trip
-• The time of departure on the first day of the trip, and the time of arrival back home on the last
-day of the trip (to the nearest hour)
-• The amount of any round-trip airfare
 
-• The amount of any car rentals
-• Miles driven, if a private vehicle was used. Calculate the vehicle expense as $0.27 per mile
-driven
+Example stdouts
 
-• Parking fees (The company allows up to $6 per day. Anything in excess of this must be paid by
-the employee.)
+How many days will you be on the trip? 3
+What time will you leave (to the nearest hour)? 6
+AM (a) or PM (p)? a
+What time will you arrive home (to the nearest hour)? 9
+AM (a) or PM (p)? p
+What is the cost of airfare? 250.0
+What is the total cost for hotels (per night)? 175.0
+Did you drive your own car (y/n)? n
+What is the cost of car rentals? 75.12
+For day 1, what were your parking fees? 5.0
+For day 1, what were your taxi fees? 0.0
+How much was breakfast? 6.76
+How much was lunch? 8.75
+How much was dinner? 12.33
+For day 2, what were your parking fees? 5.0
+For day 2, what were your taxi fees? 0.0
+How much was breakfast? 5.12
+How much was lunch? 9.87
+How much was dinner? 15.52
+For day 3, what were your parking fees? 5.0
+For day 3, what were your taxi fees? 0.0
+How much was breakfast? 6.5
+How much was lunch? 7.5
+How much was dinner? 12.75
 
-• Taxi fees, if a taxi was used anytime during the trip (The company allows up to $10 per day, for
-each day a taxi was used. Anything in excess of this must be paid by the employee.)
+Total expenses incurred by traveller: 775.22
+Maximum allowable expenses: 634.12
+You must reimburse the company for the $141.1 coverages.
 
-• Hotel expenses (The company allows up to $90 per night for lodging. Anything in excess of this
-must be paid by the employee.)
-• The amount of each meal eaten. On the first day of the trip, breakfast is allowed as an expense if the time of departure is before 7 a.m. Lunch is allowed if the time of departure is before 12 noon. Dinner is allowed on the first day if the time of departure is before 6 p.m. On the last day of the trip, breakfast is allowed if the time of arrival is after 8 a.m. Lunch is allowed if the time of arrival is after 1 p.m. Dinner is allowed on the last day if the time of arrival is after 7 p.m. The program should only ask for the amounts of allowable meals. (The company allows up to $9 for breakfast, $12 for lunch, and $16 for dinner. Anything in excess of this must be paid by the
-employee.)
 
-The program should calculate and display the total expenses incurred by the businessperson, the total allowable expenses for the trip, the excess that must be reimbursed by the businessperson, if any, and the amount saved by the businessperson if the expenses were under the total allowed.
+How many days will you be on the trip? 3
+What time will you leave (to the nearest hour)? 2
+AM (a) or PM (p)? p
+What time will you arrive home (to the nearest hour)? 3
+AM (a) or PM (p)? p
+What is the cost of airfare? 0.0
+What is the total cost for hotels (per night)? 210.52
+Did you drive your own car (y/n)? y
+How many miles did you drive? 109.0
+For day 1, what were your parking fees? 8.5
+For day 1, what were your taxi fees? 11.5
+How much was dinner? 25.75
+For day 2, what were your parking fees? 10.0
+For day 2, what were your taxi fees? 12.5
+How much was breakfast? 11.76
+How much was lunch? 13.52
+How much was dinner? 21.21
+For day 3, what were your parking fees? 10.0
+For day 3, what were your taxi fees? 13.75
+How much was breakfast? 13.0
+How much was lunch? 15.23
 
-"What is the cost of airfare? "
-"What is the total cost for hotels? "
+Total expenses incurred by traveller: 617.19
+Maximum allowable expenses: 331.43
+You must reimburse the company for the $285.76 coverages.
 
-"Did you drive your own car (y/n)? "
-"y"
-"How many miles did you drive? "
-"n"
-"What is the cost of car rentals? "
-
-cout << "For day " << 1 << ", what were your parking fees? "
-cout << "For day " << 1 << ", what were your taxi fees? "
-"How much was was breakfast? "
-"How much was lunch? "
-"Total expenses incurred by traveller: "
-"Maximum allowable expenses: "
-
-"You saved the company "
-"You must reimburse the company for the " << "coverages."
 */

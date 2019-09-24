@@ -5,12 +5,12 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/home/jack/projects/helloworld/helloworld.out",
+            "program": "/home/jack/programming_for_engineers/trip_calc/trip_calc.out",
             "args": [
                 ""
             ],
             "stopAtEntry": true,
-            "cwd": "/home/jack/projects/helloworld/",
+            "cwd": "/home/jack/programming_for_engineers/trip_calc/",
             "environment": [],
             "externalConsole": true,
             "windows": {
