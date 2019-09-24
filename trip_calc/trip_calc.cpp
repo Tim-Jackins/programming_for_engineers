@@ -30,7 +30,7 @@ double arraySum(vector<double> &v)
 
 int main()
 {
-    //system("clear");
+    system("clear");
 
     double maximumExpense = 0.0;
 
@@ -67,9 +67,9 @@ int main()
 
     // Hotel cost start
     double hotelCost;
-    cout << "What is the total cost for hotels (per night)? ";
+    cout << "What is the total cost for hotels? ";
     cin >> hotelCost;
-    hotelCost *= (daysSpent - 1);
+    //hotelCost *= (daysSpent - 1);
     maximumExpense += MAX_HOTEL_COST * (daysSpent - 1);
     // Hotel cost end
 
@@ -99,7 +99,7 @@ int main()
     int dayCount = 0;
 
     // There's no real point to me using a vector instead of an array...
-    // I'm pretty sure it made a simpler to make the sum function.
+    // I'm pretty sure it made for a simpler sum function.
     vector<double> parkingFeeArray(daysSpent);
     vector<double> taxiFeeArray(daysSpent);
 
@@ -112,6 +112,8 @@ int main()
         maximumExpense += MAX_PARKING_FEE;
     cout << "For day " << (dayCount + 1) << ", what were your taxi fees? ";
     cin >> taxiFeeArray[dayCount];
+    if (taxiFeeArray[dayCount] > 0)
+        maximumExpense += MAX_TAXI_FEE;
 
     if (leaveTime < 7)
     {
@@ -139,9 +141,12 @@ int main()
     {
         cout << "For day " << (dayCount + 1) << ", what were your parking fees? ";
         cin >> parkingFeeArray[dayCount];
-        maximumExpense += MAX_PARKING_FEE;
+        if (parkingFeeArray[dayCount] > 0)
+            maximumExpense += MAX_PARKING_FEE;
         cout << "For day " << (dayCount + 1) << ", what were your taxi fees? ";
         cin >> taxiFeeArray[dayCount];
+        if (taxiFeeArray[dayCount] > 0)
+            maximumExpense += MAX_TAXI_FEE;
 
         cout << "How much was breakfast? ";
         cin >> tempHolder;
@@ -165,6 +170,8 @@ int main()
         maximumExpense += MAX_PARKING_FEE;
     cout << "For day " << daysSpent << ", what were your taxi fees? ";
     cin >> taxiFeeArray[dayCount];
+    if (taxiFeeArray[dayCount] > 0)
+        maximumExpense += MAX_TAXI_FEE;
 
     if (homeTime > 8)
     {
@@ -188,14 +195,14 @@ int main()
         maximumExpense += MAX_DINNER_COST;
     }
     // Parking, taxi, and food cost end
-    
+
     if (arraySum(taxiFeeArray) > 0)
         maximumExpense += MAX_TAXI_FEE * daysSpent;
 
     double totalExpenses = airfareCost + hotelCost + carCost + foodCost + arraySum(parkingFeeArray) + arraySum(taxiFeeArray);
 
-    cout << "\nTotal expenses incurred by traveller: " << totalExpenses << endl
-         << "Maximum allowable expenses: " << maximumExpense << endl;
+    cout << "\nTotal expenses incurred by traveller: $" << totalExpenses << endl
+         << "Maximum allowable expenses: $" << maximumExpense << endl;
 
     double expenseDelta = maximumExpense - totalExpenses;
     if (expenseDelta > 0)
@@ -203,7 +210,7 @@ int main()
     else
         cout << "You must reimburse the company for the $" << abs(expenseDelta) << " coverages.";
 
-        return 0;
+    return 0;
 }
 
 /*
@@ -215,29 +222,29 @@ What time will you leave (to the nearest hour)? 6
 AM (a) or PM (p)? a
 What time will you arrive home (to the nearest hour)? 9
 AM (a) or PM (p)? p
-What is the cost of airfare? 250.0
-What is the total cost for hotels (per night)? 175.0
+What is the cost of airfare? 250
+What is the total cost for hotels (per night)? 175
 Did you drive your own car (y/n)? n
 What is the cost of car rentals? 75.12
-For day 1, what were your parking fees? 5.0
-For day 1, what were your taxi fees? 0.0
+For day 1, what were your parking fees? 5
+For day 1, what were your taxi fees? 0
 How much was breakfast? 6.76
 How much was lunch? 8.75
 How much was dinner? 12.33
-For day 2, what were your parking fees? 5.0
-For day 2, what were your taxi fees? 0.0
+For day 2, what were your parking fees? 5
+For day 2, what were your taxi fees? 0
 How much was breakfast? 5.12
 How much was lunch? 9.87
 How much was dinner? 15.52
-For day 3, what were your parking fees? 5.0
-For day 3, what were your taxi fees? 0.0
+For day 3, what were your parking fees? 5
+For day 3, what were your taxi fees? 0
 How much was breakfast? 6.5
 How much was lunch? 7.5
 How much was dinner? 12.75
 
-Total expenses incurred by traveller: 775.22
-Maximum allowable expenses: 634.12
-You must reimburse the company for the $141.1 coverages.
+Total expenses incurred by traveller: $600.22
+Maximum allowable expenses: $634.12
+You saved the company $33.9.
 
 
 How many days will you be on the trip? 3
@@ -245,25 +252,25 @@ What time will you leave (to the nearest hour)? 2
 AM (a) or PM (p)? p
 What time will you arrive home (to the nearest hour)? 3
 AM (a) or PM (p)? p
-What is the cost of airfare? 0.0
-What is the total cost for hotels (per night)? 210.52
+What is the cost of airfare? 0
+What is the total cost for hotels? 210.52
 Did you drive your own car (y/n)? y
-How many miles did you drive? 109.0
+How many miles did you drive? 109
 For day 1, what were your parking fees? 8.5
 For day 1, what were your taxi fees? 11.5
 How much was dinner? 25.75
-For day 2, what were your parking fees? 10.0
+For day 2, what were your parking fees? 10
 For day 2, what were your taxi fees? 12.5
 How much was breakfast? 11.76
 How much was lunch? 13.52
 How much was dinner? 21.21
-For day 3, what were your parking fees? 10.0
+For day 3, what were your parking fees? 10
 For day 3, what were your taxi fees? 13.75
-How much was breakfast? 13.0
+How much was breakfast? 13
 How much was lunch? 15.23
 
-Total expenses incurred by traveller: 617.19
-Maximum allowable expenses: 331.43
-You must reimburse the company for the $285.76 coverages.
+Total expenses incurred by traveller: $406.67
+Maximum allowable expenses: $361.43
+You must reimburse the company for the $45.24 coverages.
 
 */
