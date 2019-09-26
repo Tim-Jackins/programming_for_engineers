@@ -222,22 +222,22 @@ What time will you leave (to the nearest hour)? 6
 AM (a) or PM (p)? a
 What time will you arrive home (to the nearest hour)? 9
 AM (a) or PM (p)? p
-What is the cost of airfare? 250
-What is the total cost for hotels (per night)? 175
+What is the cost of airfare? 250.0
+What is the total cost for hotels? 175.0
 Did you drive your own car (y/n)? n
 What is the cost of car rentals? 75.12
-For day 1, what were your parking fees? 5
-For day 1, what were your taxi fees? 0
+For day 1, what were your parking fees? 5.0
+For day 1, what were your taxi fees? 0.0
 How much was breakfast? 6.76
 How much was lunch? 8.75
 How much was dinner? 12.33
-For day 2, what were your parking fees? 5
-For day 2, what were your taxi fees? 0
+For day 2, what were your parking fees? 5.0
+For day 2, what were your taxi fees? 0.0
 How much was breakfast? 5.12
 How much was lunch? 9.87
 How much was dinner? 15.52
-For day 3, what were your parking fees? 5
-For day 3, what were your taxi fees? 0
+For day 3, what were your parking fees? 5.0
+For day 3, what were your taxi fees? 0.0
 How much was breakfast? 6.5
 How much was lunch? 7.5
 How much was dinner? 12.75
@@ -252,21 +252,21 @@ What time will you leave (to the nearest hour)? 2
 AM (a) or PM (p)? p
 What time will you arrive home (to the nearest hour)? 3
 AM (a) or PM (p)? p
-What is the cost of airfare? 0
+What is the cost of airfare? 0.0
 What is the total cost for hotels? 210.52
 Did you drive your own car (y/n)? y
-How many miles did you drive? 109
+How many miles did you drive? 109.0
 For day 1, what were your parking fees? 8.5
 For day 1, what were your taxi fees? 11.5
-How much was dinner? 25.75
-For day 2, what were your parking fees? 10
+How much was dinner? 25.75    
+For day 2, what were your parking fees? 10.0
 For day 2, what were your taxi fees? 12.5
 How much was breakfast? 11.76
 How much was lunch? 13.52
 How much was dinner? 21.21
-For day 3, what were your parking fees? 10
+For day 3, what were your parking fees? 10.0
 For day 3, what were your taxi fees? 13.75
-How much was breakfast? 13
+How much was breakfast? 13.0
 How much was lunch? 15.23
 
 Total expenses incurred by traveller: $406.67
