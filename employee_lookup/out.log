@@ -1,0 +1,1992 @@
+[H[2J
+Sorting {SMITH}
+Placing SMITH at start.
+
+Sorting {JOHNSON}
+measuring SMITH|JOHNSON
+minlength = 5
+S > J = 1
+JOHNSON goes before SMITH
+JOHNSON SMITH 
+
+Sorting {WILLIAMS}
+measuring JOHNSON|WILLIAMS
+minlength = 7
+J > W = 0
+measuring SMITH|WILLIAMS
+minlength = 5
+S > W = 0
+Placing WILLIAMS last
+JOHNSON SMITH WILLIAMS 
+
+Sorting {JONES}
+measuring JOHNSON|JONES
+minlength = 5
+H > N = 0
+measuring SMITH|JONES
+minlength = 5
+S > J = 1
+JONES goes before SMITH
+JOHNSON JONES SMITH WILLIAMS 
+
+Sorting {BROWN}
+measuring JOHNSON|BROWN
+minlength = 5
+J > B = 1
+BROWN goes before JOHNSON
+BROWN JOHNSON JONES SMITH WILLIAMS 
+
+Sorting {DAVIS}
+measuring BROWN|DAVIS
+minlength = 5
+B > D = 0
+measuring JOHNSON|DAVIS
+minlength = 5
+J > D = 1
+DAVIS goes before JOHNSON
+BROWN DAVIS JOHNSON JONES SMITH WILLIAMS 
+
+Sorting {MILLER}
+measuring BROWN|MILLER
+minlength = 5
+B > M = 0
+measuring DAVIS|MILLER
+minlength = 5
+D > M = 0
+measuring JOHNSON|MILLER
+minlength = 6
+J > M = 0
+measuring JONES|MILLER
+minlength = 5
+J > M = 0
+measuring SMITH|MILLER
+minlength = 5
+S > M = 1
+MILLER goes before SMITH
+BROWN DAVIS JOHNSON JONES MILLER SMITH WILLIAMS 
+
+Sorting {WILSON}
+measuring BROWN|WILSON
+minlength = 5
+B > W = 0
+measuring DAVIS|WILSON
+minlength = 5
+D > W = 0
+measuring JOHNSON|WILSON
+minlength = 6
+J > W = 0
+measuring JONES|WILSON
+minlength = 5
+J > W = 0
+measuring MILLER|WILSON
+minlength = 6
+M > W = 0
+measuring SMITH|WILSON
+minlength = 5
+S > W = 0
+measuring WILLIAMS|WILSON
+minlength = 6
+L > S = 0
+Placing WILSON last
+BROWN DAVIS JOHNSON JONES MILLER SMITH WILLIAMS WILSON 
+
+Sorting {MOORE}
+measuring BROWN|MOORE
+minlength = 5
+B > M = 0
+measuring DAVIS|MOORE
+minlength = 5
+D > M = 0
+measuring JOHNSON|MOORE
+minlength = 5
+J > M = 0
+measuring JONES|MOORE
+minlength = 5
+J > M = 0
+measuring MILLER|MOORE
+minlength = 5
+I > O = 0
+measuring SMITH|MOORE
+minlength = 5
+S > M = 1
+MOORE goes before SMITH
+BROWN DAVIS JOHNSON JONES MILLER MOORE SMITH WILLIAMS WILSON 
+
+Sorting {TAYLOR}
+measuring BROWN|TAYLOR
+minlength = 5
+B > T = 0
+measuring DAVIS|TAYLOR
+minlength = 5
+D > T = 0
+measuring JOHNSON|TAYLOR
+minlength = 6
+J > T = 0
+measuring JONES|TAYLOR
+minlength = 5
+J > T = 0
+measuring MILLER|TAYLOR
+minlength = 6
+M > T = 0
+measuring MOORE|TAYLOR
+minlength = 5
+M > T = 0
+measuring SMITH|TAYLOR
+minlength = 5
+S > T = 0
+measuring WILLIAMS|TAYLOR
+minlength = 6
+W > T = 1
+TAYLOR goes before WILLIAMS
+BROWN DAVIS JOHNSON JONES MILLER MOORE SMITH TAYLOR WILLIAMS WILSON 
+
+Sorting {ANDERSON}
+measuring BROWN|ANDERSON
+minlength = 5
+B > A = 1
+ANDERSON goes before BROWN
+ANDERSON BROWN DAVIS JOHNSON JONES MILLER MOORE SMITH TAYLOR WILLIAMS WILSON 
+
+Sorting {THOMAS}
+measuring ANDERSON|THOMAS
+minlength = 6
+A > T = 0
+measuring BROWN|THOMAS
+minlength = 5
+B > T = 0
+measuring DAVIS|THOMAS
+minlength = 5
+D > T = 0
+measuring JOHNSON|THOMAS
+minlength = 6
+J > T = 0
+measuring JONES|THOMAS
+minlength = 5
+J > T = 0
+measuring MILLER|THOMAS
+minlength = 6
+M > T = 0
+measuring MOORE|THOMAS
+minlength = 5
+M > T = 0
+measuring SMITH|THOMAS
+minlength = 5
+S > T = 0
+measuring TAYLOR|THOMAS
+minlength = 6
+A > H = 0
+measuring WILLIAMS|THOMAS
+minlength = 6
+W > T = 1
+THOMAS goes before WILLIAMS
+ANDERSON BROWN DAVIS JOHNSON JONES MILLER MOORE SMITH TAYLOR THOMAS WILLIAMS WILSON 
+
+Sorting {JACKSON}
+measuring ANDERSON|JACKSON
+minlength = 7
+A > J = 0
+measuring BROWN|JACKSON
+minlength = 5
+B > J = 0
+measuring DAVIS|JACKSON
+minlength = 5
+D > J = 0
+measuring JOHNSON|JACKSON
+minlength = 7
+O > A = 1
+JACKSON goes before JOHNSON
+ANDERSON BROWN DAVIS JACKSON JOHNSON JONES MILLER MOORE SMITH TAYLOR THOMAS WILLIAMS WILSON 
+
+Sorting {WHITE}
+measuring ANDERSON|WHITE
+minlength = 5
+A > W = 0
+measuring BROWN|WHITE
+minlength = 5
+B > W = 0
+measuring DAVIS|WHITE
+minlength = 5
+D > W = 0
+measuring JACKSON|WHITE
+minlength = 5
+J > W = 0
+measuring JOHNSON|WHITE
+minlength = 5
+J > W = 0
+measuring JONES|WHITE
+minlength = 5
+J > W = 0
+measuring MILLER|WHITE
+minlength = 5
+M > W = 0
+measuring MOORE|WHITE
+minlength = 5
+M > W = 0
+measuring SMITH|WHITE
+minlength = 5
+S > W = 0
+measuring TAYLOR|WHITE
+minlength = 5
+T > W = 0
+measuring THOMAS|WHITE
+minlength = 5
+T > W = 0
+measuring WILLIAMS|WHITE
+minlength = 5
+I > H = 1
+WHITE goes before WILLIAMS
+ANDERSON BROWN DAVIS JACKSON JOHNSON JONES MILLER MOORE SMITH TAYLOR THOMAS WHITE WILLIAMS WILSON 
+
+Sorting {HARRIS}
+measuring ANDERSON|HARRIS
+minlength = 6
+A > H = 0
+measuring BROWN|HARRIS
+minlength = 5
+B > H = 0
+measuring DAVIS|HARRIS
+minlength = 5
+D > H = 0
+measuring JACKSON|HARRIS
+minlength = 6
+J > H = 1
+HARRIS goes before JACKSON
+ANDERSON BROWN DAVIS HARRIS JACKSON JOHNSON JONES MILLER MOORE SMITH TAYLOR THOMAS WHITE WILLIAMS WILSON 
+
+Sorting {MARTIN}
+measuring ANDERSON|MARTIN
+minlength = 6
+A > M = 0
+measuring BROWN|MARTIN
+minlength = 5
+B > M = 0
+measuring DAVIS|MARTIN
+minlength = 5
+D > M = 0
+measuring HARRIS|MARTIN
+minlength = 6
+H > M = 0
+measuring JACKSON|MARTIN
+minlength = 6
+J > M = 0
+measuring JOHNSON|MARTIN
+minlength = 6
+J > M = 0
+measuring JONES|MARTIN
+minlength = 5
+J > M = 0
+measuring MILLER|MARTIN
+minlength = 6
+I > A = 1
+MARTIN goes before MILLER
+ANDERSON BROWN DAVIS HARRIS JACKSON JOHNSON JONES MARTIN MILLER MOORE SMITH TAYLOR THOMAS WHITE WILLIAMS WILSON 
+
+Sorting {THOMPSON}
+measuring ANDERSON|THOMPSON
+minlength = 8
+A > T = 0
+measuring BROWN|THOMPSON
+minlength = 5
+B > T = 0
+measuring DAVIS|THOMPSON
+minlength = 5
+D > T = 0
+measuring HARRIS|THOMPSON
+minlength = 6
+H > T = 0
+measuring JACKSON|THOMPSON
+minlength = 7
+J > T = 0
+measuring JOHNSON|THOMPSON
+minlength = 7
+J > T = 0
+measuring JONES|THOMPSON
+minlength = 5
+J > T = 0
+measuring MARTIN|THOMPSON
+minlength = 6
+M > T = 0
+measuring MILLER|THOMPSON
+minlength = 6
+M > T = 0
+measuring MOORE|THOMPSON
+minlength = 5
+M > T = 0
+measuring SMITH|THOMPSON
+minlength = 5
+S > T = 0
+measuring TAYLOR|THOMPSON
+minlength = 6
+A > H = 0
+measuring THOMAS|THOMPSON
+minlength = 6
+A > P = 0
+measuring WHITE|THOMPSON
+minlength = 5
+W > T = 1
+THOMPSON goes before WHITE
+ANDERSON BROWN DAVIS HARRIS JACKSON JOHNSON JONES MARTIN MILLER MOORE SMITH TAYLOR THOMAS THOMPSON WHITE WILLIAMS WILSON 
+
+Sorting {GARCIA}
+measuring ANDERSON|GARCIA
+minlength = 6
+A > G = 0
+measuring BROWN|GARCIA
+minlength = 5
+B > G = 0
+measuring DAVIS|GARCIA
+minlength = 5
+D > G = 0
+measuring HARRIS|GARCIA
+minlength = 6
+H > G = 1
+GARCIA goes before HARRIS
+ANDERSON BROWN DAVIS GARCIA HARRIS JACKSON JOHNSON JONES MARTIN MILLER MOORE SMITH TAYLOR THOMAS THOMPSON WHITE WILLIAMS WILSON 
+
+Sorting {MARTINEZ}
+measuring ANDERSON|MARTINEZ
+minlength = 8
+A > M = 0
+measuring BROWN|MARTINEZ
+minlength = 5
+B > M = 0
+measuring DAVIS|MARTINEZ
+minlength = 5
+D > M = 0
+measuring GARCIA|MARTINEZ
+minlength = 6
+G > M = 0
+measuring HARRIS|MARTINEZ
+minlength = 6
+H > M = 0
+measuring JACKSON|MARTINEZ
+minlength = 7
+J > M = 0
+measuring JOHNSON|MARTINEZ
+minlength = 7
+J > M = 0
+measuring JONES|MARTINEZ
+minlength = 5
+J > M = 0
+measuring MARTIN|MARTINEZ
+minlength = 6
+measuring MILLER|MARTINEZ
+minlength = 6
+I > A = 1
+MARTINEZ goes before MILLER
+ANDERSON BROWN DAVIS GARCIA HARRIS JACKSON JOHNSON JONES MARTIN MARTINEZ MILLER MOORE SMITH TAYLOR THOMAS THOMPSON WHITE WILLIAMS WILSON 
+
+Sorting {ROBINSON}
+measuring ANDERSON|ROBINSON
+minlength = 8
+A > R = 0
+measuring BROWN|ROBINSON
+minlength = 5
+B > R = 0
+measuring DAVIS|ROBINSON
+minlength = 5
+D > R = 0
+measuring GARCIA|ROBINSON
+minlength = 6
+G > R = 0
+measuring HARRIS|ROBINSON
+minlength = 6
+H > R = 0
+measuring JACKSON|ROBINSON
+minlength = 7
+J > R = 0
+measuring JOHNSON|ROBINSON
+minlength = 7
+J > R = 0
+measuring JONES|ROBINSON
+minlength = 5
+J > R = 0
+measuring MARTIN|ROBINSON
+minlength = 6
+M > R = 0
+measuring MARTINEZ|ROBINSON
+minlength = 8
+M > R = 0
+measuring MILLER|ROBINSON
+minlength = 6
+M > R = 0
+measuring MOORE|ROBINSON
+minlength = 5
+M > R = 0
+measuring SMITH|ROBINSON
+minlength = 5
+S > R = 1
+ROBINSON goes before SMITH
+ANDERSON BROWN DAVIS GARCIA HARRIS JACKSON JOHNSON JONES MARTIN MARTINEZ MILLER MOORE ROBINSON SMITH TAYLOR THOMAS THOMPSON WHITE WILLIAMS WILSON 
+
+Sorting {CLARK}
+measuring ANDERSON|CLARK
+minlength = 5
+A > C = 0
+measuring BROWN|CLARK
+minlength = 5
+B > C = 0
+measuring DAVIS|CLARK
+minlength = 5
+D > C = 1
+CLARK goes before DAVIS
+ANDERSON BROWN CLARK DAVIS GARCIA HARRIS JACKSON JOHNSON JONES MARTIN MARTINEZ MILLER MOORE ROBINSON SMITH TAYLOR THOMAS THOMPSON WHITE WILLIAMS WILSON 
+
+Sorting {RODRIGUEZ}
+measuring ANDERSON|RODRIGUEZ
+minlength = 8
+A > R = 0
+measuring BROWN|RODRIGUEZ
+minlength = 5
+B > R = 0
+measuring CLARK|RODRIGUEZ
+minlength = 5
+C > R = 0
+measuring DAVIS|RODRIGUEZ
+minlength = 5
+D > R = 0
+measuring GARCIA|RODRIGUEZ
+minlength = 6
+G > R = 0
+measuring HARRIS|RODRIGUEZ
+minlength = 6
+H > R = 0
+measuring JACKSON|RODRIGUEZ
+minlength = 7
+J > R = 0
+measuring JOHNSON|RODRIGUEZ
+minlength = 7
+J > R = 0
+measuring JONES|RODRIGUEZ
+minlength = 5
+J > R = 0
+measuring MARTIN|RODRIGUEZ
+minlength = 6
+M > R = 0
+measuring MARTINEZ|RODRIGUEZ
+minlength = 8
+M > R = 0
+measuring MILLER|RODRIGUEZ
+minlength = 6
+M > R = 0
+measuring MOORE|RODRIGUEZ
+minlength = 5
+M > R = 0
+measuring ROBINSON|RODRIGUEZ
+minlength = 8
+B > D = 0
+measuring SMITH|RODRIGUEZ
+minlength = 5
+S > R = 1
+RODRIGUEZ goes before SMITH
+ANDERSON BROWN CLARK DAVIS GARCIA HARRIS JACKSON JOHNSON JONES MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SMITH TAYLOR THOMAS THOMPSON WHITE WILLIAMS WILSON 
+
+Sorting {LEWIS}
+measuring ANDERSON|LEWIS
+minlength = 5
+A > L = 0
+measuring BROWN|LEWIS
+minlength = 5
+B > L = 0
+measuring CLARK|LEWIS
+minlength = 5
+C > L = 0
+measuring DAVIS|LEWIS
+minlength = 5
+D > L = 0
+measuring GARCIA|LEWIS
+minlength = 5
+G > L = 0
+measuring HARRIS|LEWIS
+minlength = 5
+H > L = 0
+measuring JACKSON|LEWIS
+minlength = 5
+J > L = 0
+measuring JOHNSON|LEWIS
+minlength = 5
+J > L = 0
+measuring JONES|LEWIS
+minlength = 5
+J > L = 0
+measuring MARTIN|LEWIS
+minlength = 5
+M > L = 1
+LEWIS goes before MARTIN
+ANDERSON BROWN CLARK DAVIS GARCIA HARRIS JACKSON JOHNSON JONES LEWIS MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SMITH TAYLOR THOMAS THOMPSON WHITE WILLIAMS WILSON 
+
+Sorting {LEE}
+measuring ANDERSON|LEE
+minlength = 3
+A > L = 0
+measuring BROWN|LEE
+minlength = 3
+B > L = 0
+measuring CLARK|LEE
+minlength = 3
+C > L = 0
+measuring DAVIS|LEE
+minlength = 3
+D > L = 0
+measuring GARCIA|LEE
+minlength = 3
+G > L = 0
+measuring HARRIS|LEE
+minlength = 3
+H > L = 0
+measuring JACKSON|LEE
+minlength = 3
+J > L = 0
+measuring JOHNSON|LEE
+minlength = 3
+J > L = 0
+measuring JONES|LEE
+minlength = 3
+J > L = 0
+measuring LEWIS|LEE
+minlength = 3
+W > E = 1
+LEE goes before LEWIS
+ANDERSON BROWN CLARK DAVIS GARCIA HARRIS JACKSON JOHNSON JONES LEE LEWIS MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SMITH TAYLOR THOMAS THOMPSON WHITE WILLIAMS WILSON 
+
+Sorting {WALKER}
+measuring ANDERSON|WALKER
+minlength = 6
+A > W = 0
+measuring BROWN|WALKER
+minlength = 5
+B > W = 0
+measuring CLARK|WALKER
+minlength = 5
+C > W = 0
+measuring DAVIS|WALKER
+minlength = 5
+D > W = 0
+measuring GARCIA|WALKER
+minlength = 6
+G > W = 0
+measuring HARRIS|WALKER
+minlength = 6
+H > W = 0
+measuring JACKSON|WALKER
+minlength = 6
+J > W = 0
+measuring JOHNSON|WALKER
+minlength = 6
+J > W = 0
+measuring JONES|WALKER
+minlength = 5
+J > W = 0
+measuring LEE|WALKER
+minlength = 3
+L > W = 0
+measuring LEWIS|WALKER
+minlength = 5
+L > W = 0
+measuring MARTIN|WALKER
+minlength = 6
+M > W = 0
+measuring MARTINEZ|WALKER
+minlength = 6
+M > W = 0
+measuring MILLER|WALKER
+minlength = 6
+M > W = 0
+measuring MOORE|WALKER
+minlength = 5
+M > W = 0
+measuring ROBINSON|WALKER
+minlength = 6
+R > W = 0
+measuring RODRIGUEZ|WALKER
+minlength = 6
+R > W = 0
+measuring SMITH|WALKER
+minlength = 5
+S > W = 0
+measuring TAYLOR|WALKER
+minlength = 6
+T > W = 0
+measuring THOMAS|WALKER
+minlength = 6
+T > W = 0
+measuring THOMPSON|WALKER
+minlength = 6
+T > W = 0
+measuring WHITE|WALKER
+minlength = 5
+H > A = 1
+WALKER goes before WHITE
+ANDERSON BROWN CLARK DAVIS GARCIA HARRIS JACKSON JOHNSON JONES LEE LEWIS MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON 
+
+Sorting {HALL}
+measuring ANDERSON|HALL
+minlength = 4
+A > H = 0
+measuring BROWN|HALL
+minlength = 4
+B > H = 0
+measuring CLARK|HALL
+minlength = 4
+C > H = 0
+measuring DAVIS|HALL
+minlength = 4
+D > H = 0
+measuring GARCIA|HALL
+minlength = 4
+G > H = 0
+measuring HARRIS|HALL
+minlength = 4
+R > L = 1
+HALL goes before HARRIS
+ANDERSON BROWN CLARK DAVIS GARCIA HALL HARRIS JACKSON JOHNSON JONES LEE LEWIS MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON 
+
+Sorting {ALLEN}
+measuring ANDERSON|ALLEN
+minlength = 5
+N > L = 1
+ALLEN goes before ANDERSON
+ALLEN ANDERSON BROWN CLARK DAVIS GARCIA HALL HARRIS JACKSON JOHNSON JONES LEE LEWIS MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON 
+
+Sorting {YOUNG}
+measuring ALLEN|YOUNG
+minlength = 5
+A > Y = 0
+measuring ANDERSON|YOUNG
+minlength = 5
+A > Y = 0
+measuring BROWN|YOUNG
+minlength = 5
+B > Y = 0
+measuring CLARK|YOUNG
+minlength = 5
+C > Y = 0
+measuring DAVIS|YOUNG
+minlength = 5
+D > Y = 0
+measuring GARCIA|YOUNG
+minlength = 5
+G > Y = 0
+measuring HALL|YOUNG
+minlength = 4
+H > Y = 0
+measuring HARRIS|YOUNG
+minlength = 5
+H > Y = 0
+measuring JACKSON|YOUNG
+minlength = 5
+J > Y = 0
+measuring JOHNSON|YOUNG
+minlength = 5
+J > Y = 0
+measuring JONES|YOUNG
+minlength = 5
+J > Y = 0
+measuring LEE|YOUNG
+minlength = 3
+L > Y = 0
+measuring LEWIS|YOUNG
+minlength = 5
+L > Y = 0
+measuring MARTIN|YOUNG
+minlength = 5
+M > Y = 0
+measuring MARTINEZ|YOUNG
+minlength = 5
+M > Y = 0
+measuring MILLER|YOUNG
+minlength = 5
+M > Y = 0
+measuring MOORE|YOUNG
+minlength = 5
+M > Y = 0
+measuring ROBINSON|YOUNG
+minlength = 5
+R > Y = 0
+measuring RODRIGUEZ|YOUNG
+minlength = 5
+R > Y = 0
+measuring SMITH|YOUNG
+minlength = 5
+S > Y = 0
+measuring TAYLOR|YOUNG
+minlength = 5
+T > Y = 0
+measuring THOMAS|YOUNG
+minlength = 5
+T > Y = 0
+measuring THOMPSON|YOUNG
+minlength = 5
+T > Y = 0
+measuring WALKER|YOUNG
+minlength = 5
+W > Y = 0
+measuring WHITE|YOUNG
+minlength = 5
+W > Y = 0
+measuring WILLIAMS|YOUNG
+minlength = 5
+W > Y = 0
+measuring WILSON|YOUNG
+minlength = 5
+W > Y = 0
+Placing YOUNG last
+ALLEN ANDERSON BROWN CLARK DAVIS GARCIA HALL HARRIS JACKSON JOHNSON JONES LEE LEWIS MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON YOUNG 
+
+Sorting {HERNANDEZ}
+measuring ALLEN|HERNANDEZ
+minlength = 5
+A > H = 0
+measuring ANDERSON|HERNANDEZ
+minlength = 8
+A > H = 0
+measuring BROWN|HERNANDEZ
+minlength = 5
+B > H = 0
+measuring CLARK|HERNANDEZ
+minlength = 5
+C > H = 0
+measuring DAVIS|HERNANDEZ
+minlength = 5
+D > H = 0
+measuring GARCIA|HERNANDEZ
+minlength = 6
+G > H = 0
+measuring HALL|HERNANDEZ
+minlength = 4
+A > E = 0
+measuring HARRIS|HERNANDEZ
+minlength = 6
+A > E = 0
+measuring JACKSON|HERNANDEZ
+minlength = 7
+J > H = 1
+HERNANDEZ goes before JACKSON
+ALLEN ANDERSON BROWN CLARK DAVIS GARCIA HALL HARRIS HERNANDEZ JACKSON JOHNSON JONES LEE LEWIS MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON YOUNG 
+
+Sorting {KING}
+measuring ALLEN|KING
+minlength = 4
+A > K = 0
+measuring ANDERSON|KING
+minlength = 4
+A > K = 0
+measuring BROWN|KING
+minlength = 4
+B > K = 0
+measuring CLARK|KING
+minlength = 4
+C > K = 0
+measuring DAVIS|KING
+minlength = 4
+D > K = 0
+measuring GARCIA|KING
+minlength = 4
+G > K = 0
+measuring HALL|KING
+minlength = 4
+H > K = 0
+measuring HARRIS|KING
+minlength = 4
+H > K = 0
+measuring HERNANDEZ|KING
+minlength = 4
+H > K = 0
+measuring JACKSON|KING
+minlength = 4
+J > K = 0
+measuring JOHNSON|KING
+minlength = 4
+J > K = 0
+measuring JONES|KING
+minlength = 4
+J > K = 0
+measuring LEE|KING
+minlength = 3
+L > K = 1
+KING goes before LEE
+ALLEN ANDERSON BROWN CLARK DAVIS GARCIA HALL HARRIS HERNANDEZ JACKSON JOHNSON JONES KING LEE LEWIS MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON YOUNG 
+
+Sorting {WRIGHT}
+measuring ALLEN|WRIGHT
+minlength = 5
+A > W = 0
+measuring ANDERSON|WRIGHT
+minlength = 6
+A > W = 0
+measuring BROWN|WRIGHT
+minlength = 5
+B > W = 0
+measuring CLARK|WRIGHT
+minlength = 5
+C > W = 0
+measuring DAVIS|WRIGHT
+minlength = 5
+D > W = 0
+measuring GARCIA|WRIGHT
+minlength = 6
+G > W = 0
+measuring HALL|WRIGHT
+minlength = 4
+H > W = 0
+measuring HARRIS|WRIGHT
+minlength = 6
+H > W = 0
+measuring HERNANDEZ|WRIGHT
+minlength = 6
+H > W = 0
+measuring JACKSON|WRIGHT
+minlength = 6
+J > W = 0
+measuring JOHNSON|WRIGHT
+minlength = 6
+J > W = 0
+measuring JONES|WRIGHT
+minlength = 5
+J > W = 0
+measuring KING|WRIGHT
+minlength = 4
+K > W = 0
+measuring LEE|WRIGHT
+minlength = 3
+L > W = 0
+measuring LEWIS|WRIGHT
+minlength = 5
+L > W = 0
+measuring MARTIN|WRIGHT
+minlength = 6
+M > W = 0
+measuring MARTINEZ|WRIGHT
+minlength = 6
+M > W = 0
+measuring MILLER|WRIGHT
+minlength = 6
+M > W = 0
+measuring MOORE|WRIGHT
+minlength = 5
+M > W = 0
+measuring ROBINSON|WRIGHT
+minlength = 6
+R > W = 0
+measuring RODRIGUEZ|WRIGHT
+minlength = 6
+R > W = 0
+measuring SMITH|WRIGHT
+minlength = 5
+S > W = 0
+measuring TAYLOR|WRIGHT
+minlength = 6
+T > W = 0
+measuring THOMAS|WRIGHT
+minlength = 6
+T > W = 0
+measuring THOMPSON|WRIGHT
+minlength = 6
+T > W = 0
+measuring WALKER|WRIGHT
+minlength = 6
+A > R = 0
+measuring WHITE|WRIGHT
+minlength = 5
+H > R = 0
+measuring WILLIAMS|WRIGHT
+minlength = 6
+I > R = 0
+measuring WILSON|WRIGHT
+minlength = 6
+I > R = 0
+measuring YOUNG|WRIGHT
+minlength = 5
+Y > W = 1
+WRIGHT goes before YOUNG
+ALLEN ANDERSON BROWN CLARK DAVIS GARCIA HALL HARRIS HERNANDEZ JACKSON JOHNSON JONES KING LEE LEWIS MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {LOPEZ}
+measuring ALLEN|LOPEZ
+minlength = 5
+A > L = 0
+measuring ANDERSON|LOPEZ
+minlength = 5
+A > L = 0
+measuring BROWN|LOPEZ
+minlength = 5
+B > L = 0
+measuring CLARK|LOPEZ
+minlength = 5
+C > L = 0
+measuring DAVIS|LOPEZ
+minlength = 5
+D > L = 0
+measuring GARCIA|LOPEZ
+minlength = 5
+G > L = 0
+measuring HALL|LOPEZ
+minlength = 4
+H > L = 0
+measuring HARRIS|LOPEZ
+minlength = 5
+H > L = 0
+measuring HERNANDEZ|LOPEZ
+minlength = 5
+H > L = 0
+measuring JACKSON|LOPEZ
+minlength = 5
+J > L = 0
+measuring JOHNSON|LOPEZ
+minlength = 5
+J > L = 0
+measuring JONES|LOPEZ
+minlength = 5
+J > L = 0
+measuring KING|LOPEZ
+minlength = 4
+K > L = 0
+measuring LEE|LOPEZ
+minlength = 3
+E > O = 0
+measuring LEWIS|LOPEZ
+minlength = 5
+E > O = 0
+measuring MARTIN|LOPEZ
+minlength = 5
+M > L = 1
+LOPEZ goes before MARTIN
+ALLEN ANDERSON BROWN CLARK DAVIS GARCIA HALL HARRIS HERNANDEZ JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {HILL}
+measuring ALLEN|HILL
+minlength = 4
+A > H = 0
+measuring ANDERSON|HILL
+minlength = 4
+A > H = 0
+measuring BROWN|HILL
+minlength = 4
+B > H = 0
+measuring CLARK|HILL
+minlength = 4
+C > H = 0
+measuring DAVIS|HILL
+minlength = 4
+D > H = 0
+measuring GARCIA|HILL
+minlength = 4
+G > H = 0
+measuring HALL|HILL
+minlength = 4
+A > I = 0
+measuring HARRIS|HILL
+minlength = 4
+A > I = 0
+measuring HERNANDEZ|HILL
+minlength = 4
+E > I = 0
+measuring JACKSON|HILL
+minlength = 4
+J > H = 1
+HILL goes before JACKSON
+ALLEN ANDERSON BROWN CLARK DAVIS GARCIA HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {SCOTT}
+measuring ALLEN|SCOTT
+minlength = 5
+A > S = 0
+measuring ANDERSON|SCOTT
+minlength = 5
+A > S = 0
+measuring BROWN|SCOTT
+minlength = 5
+B > S = 0
+measuring CLARK|SCOTT
+minlength = 5
+C > S = 0
+measuring DAVIS|SCOTT
+minlength = 5
+D > S = 0
+measuring GARCIA|SCOTT
+minlength = 5
+G > S = 0
+measuring HALL|SCOTT
+minlength = 4
+H > S = 0
+measuring HARRIS|SCOTT
+minlength = 5
+H > S = 0
+measuring HERNANDEZ|SCOTT
+minlength = 5
+H > S = 0
+measuring HILL|SCOTT
+minlength = 4
+H > S = 0
+measuring JACKSON|SCOTT
+minlength = 5
+J > S = 0
+measuring JOHNSON|SCOTT
+minlength = 5
+J > S = 0
+measuring JONES|SCOTT
+minlength = 5
+J > S = 0
+measuring KING|SCOTT
+minlength = 4
+K > S = 0
+measuring LEE|SCOTT
+minlength = 3
+L > S = 0
+measuring LEWIS|SCOTT
+minlength = 5
+L > S = 0
+measuring LOPEZ|SCOTT
+minlength = 5
+L > S = 0
+measuring MARTIN|SCOTT
+minlength = 5
+M > S = 0
+measuring MARTINEZ|SCOTT
+minlength = 5
+M > S = 0
+measuring MILLER|SCOTT
+minlength = 5
+M > S = 0
+measuring MOORE|SCOTT
+minlength = 5
+M > S = 0
+measuring ROBINSON|SCOTT
+minlength = 5
+R > S = 0
+measuring RODRIGUEZ|SCOTT
+minlength = 5
+R > S = 0
+measuring SMITH|SCOTT
+minlength = 5
+M > C = 1
+SCOTT goes before SMITH
+ALLEN ANDERSON BROWN CLARK DAVIS GARCIA HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {GREEN}
+measuring ALLEN|GREEN
+minlength = 5
+A > G = 0
+measuring ANDERSON|GREEN
+minlength = 5
+A > G = 0
+measuring BROWN|GREEN
+minlength = 5
+B > G = 0
+measuring CLARK|GREEN
+minlength = 5
+C > G = 0
+measuring DAVIS|GREEN
+minlength = 5
+D > G = 0
+measuring GARCIA|GREEN
+minlength = 5
+A > R = 0
+measuring HALL|GREEN
+minlength = 4
+H > G = 1
+GREEN goes before HALL
+ALLEN ANDERSON BROWN CLARK DAVIS GARCIA GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {ADAMS}
+measuring ALLEN|ADAMS
+minlength = 5
+L > D = 1
+ADAMS goes before ALLEN
+ADAMS ALLEN ANDERSON BROWN CLARK DAVIS GARCIA GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {BAKER}
+measuring ADAMS|BAKER
+minlength = 5
+A > B = 0
+measuring ALLEN|BAKER
+minlength = 5
+A > B = 0
+measuring ANDERSON|BAKER
+minlength = 5
+A > B = 0
+measuring BROWN|BAKER
+minlength = 5
+R > A = 1
+BAKER goes before BROWN
+ADAMS ALLEN ANDERSON BAKER BROWN CLARK DAVIS GARCIA GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {GONZALEZ}
+measuring ADAMS|GONZALEZ
+minlength = 5
+A > G = 0
+measuring ALLEN|GONZALEZ
+minlength = 5
+A > G = 0
+measuring ANDERSON|GONZALEZ
+minlength = 8
+A > G = 0
+measuring BAKER|GONZALEZ
+minlength = 5
+B > G = 0
+measuring BROWN|GONZALEZ
+minlength = 5
+B > G = 0
+measuring CLARK|GONZALEZ
+minlength = 5
+C > G = 0
+measuring DAVIS|GONZALEZ
+minlength = 5
+D > G = 0
+measuring GARCIA|GONZALEZ
+minlength = 6
+A > O = 0
+measuring GREEN|GONZALEZ
+minlength = 5
+R > O = 1
+GONZALEZ goes before GREEN
+ADAMS ALLEN ANDERSON BAKER BROWN CLARK DAVIS GARCIA GONZALEZ GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MOORE ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {NELSON}
+measuring ADAMS|NELSON
+minlength = 5
+A > N = 0
+measuring ALLEN|NELSON
+minlength = 5
+A > N = 0
+measuring ANDERSON|NELSON
+minlength = 6
+A > N = 0
+measuring BAKER|NELSON
+minlength = 5
+B > N = 0
+measuring BROWN|NELSON
+minlength = 5
+B > N = 0
+measuring CLARK|NELSON
+minlength = 5
+C > N = 0
+measuring DAVIS|NELSON
+minlength = 5
+D > N = 0
+measuring GARCIA|NELSON
+minlength = 6
+G > N = 0
+measuring GONZALEZ|NELSON
+minlength = 6
+G > N = 0
+measuring GREEN|NELSON
+minlength = 5
+G > N = 0
+measuring HALL|NELSON
+minlength = 4
+H > N = 0
+measuring HARRIS|NELSON
+minlength = 6
+H > N = 0
+measuring HERNANDEZ|NELSON
+minlength = 6
+H > N = 0
+measuring HILL|NELSON
+minlength = 4
+H > N = 0
+measuring JACKSON|NELSON
+minlength = 6
+J > N = 0
+measuring JOHNSON|NELSON
+minlength = 6
+J > N = 0
+measuring JONES|NELSON
+minlength = 5
+J > N = 0
+measuring KING|NELSON
+minlength = 4
+K > N = 0
+measuring LEE|NELSON
+minlength = 3
+L > N = 0
+measuring LEWIS|NELSON
+minlength = 5
+L > N = 0
+measuring LOPEZ|NELSON
+minlength = 5
+L > N = 0
+measuring MARTIN|NELSON
+minlength = 6
+M > N = 0
+measuring MARTINEZ|NELSON
+minlength = 6
+M > N = 0
+measuring MILLER|NELSON
+minlength = 6
+M > N = 0
+measuring MOORE|NELSON
+minlength = 5
+M > N = 0
+measuring ROBINSON|NELSON
+minlength = 6
+R > N = 1
+NELSON goes before ROBINSON
+ADAMS ALLEN ANDERSON BAKER BROWN CLARK DAVIS GARCIA GONZALEZ GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MOORE NELSON ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {CARTER}
+measuring ADAMS|CARTER
+minlength = 5
+A > C = 0
+measuring ALLEN|CARTER
+minlength = 5
+A > C = 0
+measuring ANDERSON|CARTER
+minlength = 6
+A > C = 0
+measuring BAKER|CARTER
+minlength = 5
+B > C = 0
+measuring BROWN|CARTER
+minlength = 5
+B > C = 0
+measuring CLARK|CARTER
+minlength = 5
+L > A = 1
+CARTER goes before CLARK
+ADAMS ALLEN ANDERSON BAKER BROWN CARTER CLARK DAVIS GARCIA GONZALEZ GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MOORE NELSON ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {MITCHELL}
+measuring ADAMS|MITCHELL
+minlength = 5
+A > M = 0
+measuring ALLEN|MITCHELL
+minlength = 5
+A > M = 0
+measuring ANDERSON|MITCHELL
+minlength = 8
+A > M = 0
+measuring BAKER|MITCHELL
+minlength = 5
+B > M = 0
+measuring BROWN|MITCHELL
+minlength = 5
+B > M = 0
+measuring CARTER|MITCHELL
+minlength = 6
+C > M = 0
+measuring CLARK|MITCHELL
+minlength = 5
+C > M = 0
+measuring DAVIS|MITCHELL
+minlength = 5
+D > M = 0
+measuring GARCIA|MITCHELL
+minlength = 6
+G > M = 0
+measuring GONZALEZ|MITCHELL
+minlength = 8
+G > M = 0
+measuring GREEN|MITCHELL
+minlength = 5
+G > M = 0
+measuring HALL|MITCHELL
+minlength = 4
+H > M = 0
+measuring HARRIS|MITCHELL
+minlength = 6
+H > M = 0
+measuring HERNANDEZ|MITCHELL
+minlength = 8
+H > M = 0
+measuring HILL|MITCHELL
+minlength = 4
+H > M = 0
+measuring JACKSON|MITCHELL
+minlength = 7
+J > M = 0
+measuring JOHNSON|MITCHELL
+minlength = 7
+J > M = 0
+measuring JONES|MITCHELL
+minlength = 5
+J > M = 0
+measuring KING|MITCHELL
+minlength = 4
+K > M = 0
+measuring LEE|MITCHELL
+minlength = 3
+L > M = 0
+measuring LEWIS|MITCHELL
+minlength = 5
+L > M = 0
+measuring LOPEZ|MITCHELL
+minlength = 5
+L > M = 0
+measuring MARTIN|MITCHELL
+minlength = 6
+A > I = 0
+measuring MARTINEZ|MITCHELL
+minlength = 8
+A > I = 0
+measuring MILLER|MITCHELL
+minlength = 6
+L > T = 0
+measuring MOORE|MITCHELL
+minlength = 5
+O > I = 1
+MITCHELL goes before MOORE
+ADAMS ALLEN ANDERSON BAKER BROWN CARTER CLARK DAVIS GARCIA GONZALEZ GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MITCHELL MOORE NELSON ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {PEREZ}
+measuring ADAMS|PEREZ
+minlength = 5
+A > P = 0
+measuring ALLEN|PEREZ
+minlength = 5
+A > P = 0
+measuring ANDERSON|PEREZ
+minlength = 5
+A > P = 0
+measuring BAKER|PEREZ
+minlength = 5
+B > P = 0
+measuring BROWN|PEREZ
+minlength = 5
+B > P = 0
+measuring CARTER|PEREZ
+minlength = 5
+C > P = 0
+measuring CLARK|PEREZ
+minlength = 5
+C > P = 0
+measuring DAVIS|PEREZ
+minlength = 5
+D > P = 0
+measuring GARCIA|PEREZ
+minlength = 5
+G > P = 0
+measuring GONZALEZ|PEREZ
+minlength = 5
+G > P = 0
+measuring GREEN|PEREZ
+minlength = 5
+G > P = 0
+measuring HALL|PEREZ
+minlength = 4
+H > P = 0
+measuring HARRIS|PEREZ
+minlength = 5
+H > P = 0
+measuring HERNANDEZ|PEREZ
+minlength = 5
+H > P = 0
+measuring HILL|PEREZ
+minlength = 4
+H > P = 0
+measuring JACKSON|PEREZ
+minlength = 5
+J > P = 0
+measuring JOHNSON|PEREZ
+minlength = 5
+J > P = 0
+measuring JONES|PEREZ
+minlength = 5
+J > P = 0
+measuring KING|PEREZ
+minlength = 4
+K > P = 0
+measuring LEE|PEREZ
+minlength = 3
+L > P = 0
+measuring LEWIS|PEREZ
+minlength = 5
+L > P = 0
+measuring LOPEZ|PEREZ
+minlength = 5
+L > P = 0
+measuring MARTIN|PEREZ
+minlength = 5
+M > P = 0
+measuring MARTINEZ|PEREZ
+minlength = 5
+M > P = 0
+measuring MILLER|PEREZ
+minlength = 5
+M > P = 0
+measuring MITCHELL|PEREZ
+minlength = 5
+M > P = 0
+measuring MOORE|PEREZ
+minlength = 5
+M > P = 0
+measuring NELSON|PEREZ
+minlength = 5
+N > P = 0
+measuring ROBINSON|PEREZ
+minlength = 5
+R > P = 1
+PEREZ goes before ROBINSON
+ADAMS ALLEN ANDERSON BAKER BROWN CARTER CLARK DAVIS GARCIA GONZALEZ GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MITCHELL MOORE NELSON PEREZ ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {ROBERTS}
+measuring ADAMS|ROBERTS
+minlength = 5
+A > R = 0
+measuring ALLEN|ROBERTS
+minlength = 5
+A > R = 0
+measuring ANDERSON|ROBERTS
+minlength = 7
+A > R = 0
+measuring BAKER|ROBERTS
+minlength = 5
+B > R = 0
+measuring BROWN|ROBERTS
+minlength = 5
+B > R = 0
+measuring CARTER|ROBERTS
+minlength = 6
+C > R = 0
+measuring CLARK|ROBERTS
+minlength = 5
+C > R = 0
+measuring DAVIS|ROBERTS
+minlength = 5
+D > R = 0
+measuring GARCIA|ROBERTS
+minlength = 6
+G > R = 0
+measuring GONZALEZ|ROBERTS
+minlength = 7
+G > R = 0
+measuring GREEN|ROBERTS
+minlength = 5
+G > R = 0
+measuring HALL|ROBERTS
+minlength = 4
+H > R = 0
+measuring HARRIS|ROBERTS
+minlength = 6
+H > R = 0
+measuring HERNANDEZ|ROBERTS
+minlength = 7
+H > R = 0
+measuring HILL|ROBERTS
+minlength = 4
+H > R = 0
+measuring JACKSON|ROBERTS
+minlength = 7
+J > R = 0
+measuring JOHNSON|ROBERTS
+minlength = 7
+J > R = 0
+measuring JONES|ROBERTS
+minlength = 5
+J > R = 0
+measuring KING|ROBERTS
+minlength = 4
+K > R = 0
+measuring LEE|ROBERTS
+minlength = 3
+L > R = 0
+measuring LEWIS|ROBERTS
+minlength = 5
+L > R = 0
+measuring LOPEZ|ROBERTS
+minlength = 5
+L > R = 0
+measuring MARTIN|ROBERTS
+minlength = 6
+M > R = 0
+measuring MARTINEZ|ROBERTS
+minlength = 7
+M > R = 0
+measuring MILLER|ROBERTS
+minlength = 6
+M > R = 0
+measuring MITCHELL|ROBERTS
+minlength = 7
+M > R = 0
+measuring MOORE|ROBERTS
+minlength = 5
+M > R = 0
+measuring NELSON|ROBERTS
+minlength = 6
+N > R = 0
+measuring PEREZ|ROBERTS
+minlength = 5
+P > R = 0
+measuring ROBINSON|ROBERTS
+minlength = 7
+I > E = 1
+ROBERTS goes before ROBINSON
+ADAMS ALLEN ANDERSON BAKER BROWN CARTER CLARK DAVIS GARCIA GONZALEZ GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MITCHELL MOORE NELSON PEREZ ROBERTS ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {TURNER}
+measuring ADAMS|TURNER
+minlength = 5
+A > T = 0
+measuring ALLEN|TURNER
+minlength = 5
+A > T = 0
+measuring ANDERSON|TURNER
+minlength = 6
+A > T = 0
+measuring BAKER|TURNER
+minlength = 5
+B > T = 0
+measuring BROWN|TURNER
+minlength = 5
+B > T = 0
+measuring CARTER|TURNER
+minlength = 6
+C > T = 0
+measuring CLARK|TURNER
+minlength = 5
+C > T = 0
+measuring DAVIS|TURNER
+minlength = 5
+D > T = 0
+measuring GARCIA|TURNER
+minlength = 6
+G > T = 0
+measuring GONZALEZ|TURNER
+minlength = 6
+G > T = 0
+measuring GREEN|TURNER
+minlength = 5
+G > T = 0
+measuring HALL|TURNER
+minlength = 4
+H > T = 0
+measuring HARRIS|TURNER
+minlength = 6
+H > T = 0
+measuring HERNANDEZ|TURNER
+minlength = 6
+H > T = 0
+measuring HILL|TURNER
+minlength = 4
+H > T = 0
+measuring JACKSON|TURNER
+minlength = 6
+J > T = 0
+measuring JOHNSON|TURNER
+minlength = 6
+J > T = 0
+measuring JONES|TURNER
+minlength = 5
+J > T = 0
+measuring KING|TURNER
+minlength = 4
+K > T = 0
+measuring LEE|TURNER
+minlength = 3
+L > T = 0
+measuring LEWIS|TURNER
+minlength = 5
+L > T = 0
+measuring LOPEZ|TURNER
+minlength = 5
+L > T = 0
+measuring MARTIN|TURNER
+minlength = 6
+M > T = 0
+measuring MARTINEZ|TURNER
+minlength = 6
+M > T = 0
+measuring MILLER|TURNER
+minlength = 6
+M > T = 0
+measuring MITCHELL|TURNER
+minlength = 6
+M > T = 0
+measuring MOORE|TURNER
+minlength = 5
+M > T = 0
+measuring NELSON|TURNER
+minlength = 6
+N > T = 0
+measuring PEREZ|TURNER
+minlength = 5
+P > T = 0
+measuring ROBERTS|TURNER
+minlength = 6
+R > T = 0
+measuring ROBINSON|TURNER
+minlength = 6
+R > T = 0
+measuring RODRIGUEZ|TURNER
+minlength = 6
+R > T = 0
+measuring SCOTT|TURNER
+minlength = 5
+S > T = 0
+measuring SMITH|TURNER
+minlength = 5
+S > T = 0
+measuring TAYLOR|TURNER
+minlength = 6
+A > U = 0
+measuring THOMAS|TURNER
+minlength = 6
+H > U = 0
+measuring THOMPSON|TURNER
+minlength = 6
+H > U = 0
+measuring WALKER|TURNER
+minlength = 6
+W > T = 1
+TURNER goes before WALKER
+ADAMS ALLEN ANDERSON BAKER BROWN CARTER CLARK DAVIS GARCIA GONZALEZ GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MITCHELL MOORE NELSON PEREZ ROBERTS ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON TURNER WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {PHILLIPS}
+measuring ADAMS|PHILLIPS
+minlength = 5
+A > P = 0
+measuring ALLEN|PHILLIPS
+minlength = 5
+A > P = 0
+measuring ANDERSON|PHILLIPS
+minlength = 8
+A > P = 0
+measuring BAKER|PHILLIPS
+minlength = 5
+B > P = 0
+measuring BROWN|PHILLIPS
+minlength = 5
+B > P = 0
+measuring CARTER|PHILLIPS
+minlength = 6
+C > P = 0
+measuring CLARK|PHILLIPS
+minlength = 5
+C > P = 0
+measuring DAVIS|PHILLIPS
+minlength = 5
+D > P = 0
+measuring GARCIA|PHILLIPS
+minlength = 6
+G > P = 0
+measuring GONZALEZ|PHILLIPS
+minlength = 8
+G > P = 0
+measuring GREEN|PHILLIPS
+minlength = 5
+G > P = 0
+measuring HALL|PHILLIPS
+minlength = 4
+H > P = 0
+measuring HARRIS|PHILLIPS
+minlength = 6
+H > P = 0
+measuring HERNANDEZ|PHILLIPS
+minlength = 8
+H > P = 0
+measuring HILL|PHILLIPS
+minlength = 4
+H > P = 0
+measuring JACKSON|PHILLIPS
+minlength = 7
+J > P = 0
+measuring JOHNSON|PHILLIPS
+minlength = 7
+J > P = 0
+measuring JONES|PHILLIPS
+minlength = 5
+J > P = 0
+measuring KING|PHILLIPS
+minlength = 4
+K > P = 0
+measuring LEE|PHILLIPS
+minlength = 3
+L > P = 0
+measuring LEWIS|PHILLIPS
+minlength = 5
+L > P = 0
+measuring LOPEZ|PHILLIPS
+minlength = 5
+L > P = 0
+measuring MARTIN|PHILLIPS
+minlength = 6
+M > P = 0
+measuring MARTINEZ|PHILLIPS
+minlength = 8
+M > P = 0
+measuring MILLER|PHILLIPS
+minlength = 6
+M > P = 0
+measuring MITCHELL|PHILLIPS
+minlength = 8
+M > P = 0
+measuring MOORE|PHILLIPS
+minlength = 5
+M > P = 0
+measuring NELSON|PHILLIPS
+minlength = 6
+N > P = 0
+measuring PEREZ|PHILLIPS
+minlength = 5
+E > H = 0
+measuring ROBERTS|PHILLIPS
+minlength = 7
+R > P = 1
+PHILLIPS goes before ROBERTS
+ADAMS ALLEN ANDERSON BAKER BROWN CARTER CLARK DAVIS GARCIA GONZALEZ GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MITCHELL MOORE NELSON PEREZ PHILLIPS ROBERTS ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON TURNER WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {CAMPBELL}
+measuring ADAMS|CAMPBELL
+minlength = 5
+A > C = 0
+measuring ALLEN|CAMPBELL
+minlength = 5
+A > C = 0
+measuring ANDERSON|CAMPBELL
+minlength = 8
+A > C = 0
+measuring BAKER|CAMPBELL
+minlength = 5
+B > C = 0
+measuring BROWN|CAMPBELL
+minlength = 5
+B > C = 0
+measuring CARTER|CAMPBELL
+minlength = 6
+R > M = 1
+CAMPBELL goes before CARTER
+ADAMS ALLEN ANDERSON BAKER BROWN CAMPBELL CARTER CLARK DAVIS GARCIA GONZALEZ GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MITCHELL MOORE NELSON PEREZ PHILLIPS ROBERTS ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON TURNER WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {PARKER}
+measuring ADAMS|PARKER
+minlength = 5
+A > P = 0
+measuring ALLEN|PARKER
+minlength = 5
+A > P = 0
+measuring ANDERSON|PARKER
+minlength = 6
+A > P = 0
+measuring BAKER|PARKER
+minlength = 5
+B > P = 0
+measuring BROWN|PARKER
+minlength = 5
+B > P = 0
+measuring CAMPBELL|PARKER
+minlength = 6
+C > P = 0
+measuring CARTER|PARKER
+minlength = 6
+C > P = 0
+measuring CLARK|PARKER
+minlength = 5
+C > P = 0
+measuring DAVIS|PARKER
+minlength = 5
+D > P = 0
+measuring GARCIA|PARKER
+minlength = 6
+G > P = 0
+measuring GONZALEZ|PARKER
+minlength = 6
+G > P = 0
+measuring GREEN|PARKER
+minlength = 5
+G > P = 0
+measuring HALL|PARKER
+minlength = 4
+H > P = 0
+measuring HARRIS|PARKER
+minlength = 6
+H > P = 0
+measuring HERNANDEZ|PARKER
+minlength = 6
+H > P = 0
+measuring HILL|PARKER
+minlength = 4
+H > P = 0
+measuring JACKSON|PARKER
+minlength = 6
+J > P = 0
+measuring JOHNSON|PARKER
+minlength = 6
+J > P = 0
+measuring JONES|PARKER
+minlength = 5
+J > P = 0
+measuring KING|PARKER
+minlength = 4
+K > P = 0
+measuring LEE|PARKER
+minlength = 3
+L > P = 0
+measuring LEWIS|PARKER
+minlength = 5
+L > P = 0
+measuring LOPEZ|PARKER
+minlength = 5
+L > P = 0
+measuring MARTIN|PARKER
+minlength = 6
+M > P = 0
+measuring MARTINEZ|PARKER
+minlength = 6
+M > P = 0
+measuring MILLER|PARKER
+minlength = 6
+M > P = 0
+measuring MITCHELL|PARKER
+minlength = 6
+M > P = 0
+measuring MOORE|PARKER
+minlength = 5
+M > P = 0
+measuring NELSON|PARKER
+minlength = 6
+N > P = 0
+measuring PEREZ|PARKER
+minlength = 5
+E > A = 1
+PARKER goes before PEREZ
+ADAMS ALLEN ANDERSON BAKER BROWN CAMPBELL CARTER CLARK DAVIS GARCIA GONZALEZ GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MITCHELL MOORE NELSON PARKER PEREZ PHILLIPS ROBERTS ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON TURNER WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {EVANS}
+measuring ADAMS|EVANS
+minlength = 5
+A > E = 0
+measuring ALLEN|EVANS
+minlength = 5
+A > E = 0
+measuring ANDERSON|EVANS
+minlength = 5
+A > E = 0
+measuring BAKER|EVANS
+minlength = 5
+B > E = 0
+measuring BROWN|EVANS
+minlength = 5
+B > E = 0
+measuring CAMPBELL|EVANS
+minlength = 5
+C > E = 0
+measuring CARTER|EVANS
+minlength = 5
+C > E = 0
+measuring CLARK|EVANS
+minlength = 5
+C > E = 0
+measuring DAVIS|EVANS
+minlength = 5
+D > E = 0
+measuring GARCIA|EVANS
+minlength = 5
+G > E = 1
+EVANS goes before GARCIA
+ADAMS ALLEN ANDERSON BAKER BROWN CAMPBELL CARTER CLARK DAVIS EVANS GARCIA GONZALEZ GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MITCHELL MOORE NELSON PARKER PEREZ PHILLIPS ROBERTS ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON TURNER WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {EDWARDS}
+measuring ADAMS|EDWARDS
+minlength = 5
+A > E = 0
+measuring ALLEN|EDWARDS
+minlength = 5
+A > E = 0
+measuring ANDERSON|EDWARDS
+minlength = 7
+A > E = 0
+measuring BAKER|EDWARDS
+minlength = 5
+B > E = 0
+measuring BROWN|EDWARDS
+minlength = 5
+B > E = 0
+measuring CAMPBELL|EDWARDS
+minlength = 7
+C > E = 0
+measuring CARTER|EDWARDS
+minlength = 6
+C > E = 0
+measuring CLARK|EDWARDS
+minlength = 5
+C > E = 0
+measuring DAVIS|EDWARDS
+minlength = 5
+D > E = 0
+measuring EVANS|EDWARDS
+minlength = 5
+V > D = 1
+EDWARDS goes before EVANS
+ADAMS ALLEN ANDERSON BAKER BROWN CAMPBELL CARTER CLARK DAVIS EDWARDS EVANS GARCIA GONZALEZ GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MITCHELL MOORE NELSON PARKER PEREZ PHILLIPS ROBERTS ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON TURNER WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+Sorting {COLLINS}
+measuring ADAMS|COLLINS
+minlength = 5
+A > C = 0
+measuring ALLEN|COLLINS
+minlength = 5
+A > C = 0
+measuring ANDERSON|COLLINS
+minlength = 7
+A > C = 0
+measuring BAKER|COLLINS
+minlength = 5
+B > C = 0
+measuring BROWN|COLLINS
+minlength = 5
+B > C = 0
+measuring CAMPBELL|COLLINS
+minlength = 7
+A > O = 0
+measuring CARTER|COLLINS
+minlength = 6
+A > O = 0
+measuring CLARK|COLLINS
+minlength = 5
+L > O = 0
+measuring DAVIS|COLLINS
+minlength = 5
+D > C = 1
+COLLINS goes before DAVIS
+ADAMS ALLEN ANDERSON BAKER BROWN CAMPBELL CARTER CLARK COLLINS DAVIS EDWARDS EVANS GARCIA GONZALEZ GREEN HALL HARRIS HERNANDEZ HILL JACKSON JOHNSON JONES KING LEE LEWIS LOPEZ MARTIN MARTINEZ MILLER MITCHELL MOORE NELSON PARKER PEREZ PHILLIPS ROBERTS ROBINSON RODRIGUEZ SCOTT SMITH TAYLOR THOMAS THOMPSON TURNER WALKER WHITE WILLIAMS WILSON WRIGHT YOUNG 
+
+ADAMS|88150|1
+ALLEN|98048|5
+ANDERSON|40607|9
+BAKER|139342|15
+BROWN|149495|1
+CAMPBELL|117099|5
+CARTER|81707|12
+CLARK|141711|13
+COLLINS|112395|2
+DAVIS|120221|14
+EDWARDS|146012|13
+EVANS|103274|19
+GARCIA|31918|16
+GONZALEZ|104557|24
+GREEN|123395|24
+HALL|42326|12
+HARRIS|80649|4
+HERNANDEZ|125224|22
+HILL|94614|24
+JACKSON|136247|25
+JOHNSON|91805|7
+JONES|104451|0
+KING|78737|6
+LEE|36903|16
+LEWIS|97171|10
+LOPEZ|135865|17
+MARTIN|32392|0
+MARTINEZ|32720|1
+MILLER|64220|4
+MITCHELL|84272|25
+MOORE|100729|1
+NELSON|50721|25
+PARKER|64839|7
+PEREZ|43642|14
+PHILLIPS|96189|10
+ROBERTS|149781|25
+ROBINSON|31898|11
+RODRIGUEZ|49797|14
+SCOTT|106858|7
+SMITH|143240|17
+TAYLOR|35605|9
+THOMAS|90689|7
+THOMPSON|124308|17
+TURNER|123843|11
+WALKER|134757|7
+WHITE|53148|9
+WILLIAMS|30038|11
+WILSON|148553|20
+WRIGHT|124135|17
+YOUNG|48437|22
