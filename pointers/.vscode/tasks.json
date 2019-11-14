@@ -2,16 +2,16 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "build hello world on WSL",
             "type": "shell",
             "command": "g++",
             "args": [
                 "-g",
                 "-o",
-                "${fileBasenameNoExtension}.out",
-                "${fileBasenameNoExtension}.cpp",
+                "pointers.out",
+                "pointers.cpp",
                 "&&",
-                "./${fileBasenameNoExtension}.out"
+                "./pointers.out"
             ],
             "group": {
                 "kind": "build",
@@ -20,4 +20,3 @@
         }
     ]
 }
-
