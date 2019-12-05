@@ -25,13 +25,16 @@ void pprint(double* arr, int length)
 int main()
 {
 	cout << "Hello World" << endl;
-
-	Circle circle1(5.0);
 	
-	cout << "Radius:        " << circle1.getRadius() << endl;
-  cout << "Diameter:      " << circle1.getDiameter() << endl;
-  cout << "Circumference: " << circle1.circumference() << endl;
-  cout << "Area:          " << circle1.area() << endl;
+	double my_center[] = {1.0, 1.0};
+	Circle circle1(1.0, my_center);
+	
+	// cout << "Radius:        " << circle1.getRadius() << endl;
+  // cout << "Diameter:      " << circle1.getDiameter() << endl;
+  // cout << "Circumference: " << circle1.circumference() << endl;
+  // cout << "Area:          " << circle1.area() << endl;
+
+	cout << circle1.testPoint(1.0, 2.0) << endl;
 
 	return 0;
 }
