@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.erb": "erb",
+    "vector": "cpp",
+    "iostream": "cpp",
+    "iosfwd": "cpp"
+  }
+}
